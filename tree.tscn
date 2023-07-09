@@ -3,15 +3,16 @@
 [ext_resource type="Texture2D" uid="uid://embuerr8007" path="res://assets/Forest Tileset.png" id="1_j6d44"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tohxe"]
-size = Vector2(20, 9)
+size = Vector2(20, 9.5)
 
 [node name="Tree" type="StaticBody2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -27)
 texture = ExtResource("1_j6d44")
 region_enabled = true
 region_rect = Rect2(128, 288, 64, 64)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 22.5)
+position = Vector2(0, -4.25)
 shape = SubResource("RectangleShape2D_tohxe")
